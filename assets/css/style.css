@@ -2,9 +2,12 @@
   margin: 0;
   padding: 0;
 }
+
 html {
   scroll-behavior: smooth;
 }
+
+
 /* FONTS */
 h1, h2, h3, H4 {
   font-family: 'roboto serif';

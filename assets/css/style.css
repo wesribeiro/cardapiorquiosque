@@ -131,8 +131,9 @@ nav ul {
 nav ul li {
   display: inline;  
   background-color: #AD3825;
+  border-radius: 10px;
   
-  padding: 10px 0;
+  padding: 7px 0;
   
   
 }

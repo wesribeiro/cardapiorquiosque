@@ -18,22 +18,26 @@ header p {
   font-size: 14px;
   line-height: 21px;
 }
-.fill, .size {
+.fill, .size, .filll {
   font-family: 'roboto';
 }
 .size {
   text-transform: none;
   
 }
-.desc {
+.desc, .desc_p {
   color: rgba(0, 0, 0, 0.7);
   font-size: 14px;
   line-height: 16px;
   margin-bottom: 5px;
 }
-.fill {
+.desc_p {
+  margin-bottom: 0px;
+}
+.fill, .filll {
   color: rgba(0, 0, 0, 0.6);
 }
+
 /* FONTS */
 
 body {
@@ -86,8 +90,10 @@ ul li {
    display: flex;
    flex-direction: column;
    justify-content: space-between;
-   margin-bottom: 20px;
+   margin-bottom: 15px;
+   list-style: none;
 }
+
 .chopp_name {
   display: flex;
   flex-direction: column;
@@ -106,4 +112,3 @@ ul li {
 .price {
   font-family: 'roboto';
 }
-

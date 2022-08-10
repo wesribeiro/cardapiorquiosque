@@ -3,7 +3,7 @@
   padding: 0;
 }
 /* FONTS */
-h1, h2, h3, H4, {
+h1, h2, h3, H4 {
   font-family: 'roboto serif';
   text-transform: uppercase;
   color: #2d2c2a;

@@ -55,6 +55,9 @@ header h1 {
 header h1 span {
   color: #AD3825;
 }
+header p {
+  line-height: 17px;
+}
 section {
   max-width: 300px;
   margin: 0 auto;

@@ -96,11 +96,8 @@
     flex-wrap: nowrap;
     
   }
-  .size, .price {
-  
-    
-    
-    
+  .price {
+    font-family: 'roboto';
   }
   
   

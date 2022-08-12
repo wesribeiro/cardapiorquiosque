@@ -209,14 +209,14 @@ nav ul li a {
   background-color: #fed7aa;
   position: fixed ;
   bottom: 16px;
-  right: 32px;
-  width: 40px;
-  height: 40px;
+  right: 15px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 15px;
+  font-size: 32px;
   color: #1f1f1f;
   text-decoration: none;
   opacity: 0;

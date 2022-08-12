@@ -9,7 +9,7 @@ html {
 
 
 /* FONTS */
-h1, h2, h3, H4 {
+h1, h2, h3, h4, h5 {
   font-family: 'roboto serif';
   text-transform: uppercase;
   color: #2d2c2a;
@@ -23,6 +23,9 @@ header p {
   color: rgba(0, 0, 0, 0.7);
   font-size: 14px;
   line-height: 21px;
+}
+.spotlight {
+  color: black;
 }
 
 .funcionamento {
@@ -92,9 +95,30 @@ section h2 {
   border-radius: 8px;
   box-shadow: 0.5px 0.5px;
 }
+.price {
+  background-color: #fed7aa;
+  padding: 2px 3px;
+  box-shadow:0.8px 0.8px;
+  border-radius: 3px;
+}
+
 
 .chopp_name h3 {
 font-size: 16px;
+}
+#combo {
+  line-height: 10px;
+}
+ul #combo h3 {
+  margin-bottom: 10px;
+}
+#combo .price, .filll {
+  line-height: 20px;
+  margin-top: 3px;
+  padding-top: 2px;
+}
+h5 {
+  margin-bottom: 10px;
 }
 
 ul li {
@@ -103,6 +127,17 @@ ul li {
    justify-content: space-around;
    margin-bottom: 15px;
    list-style: none;
+   line-height: 20px;
+}
+.porcoes {
+  line-height: 20px;
+}
+
+.porcoes .description,  {
+  margin-bottom: 5px;
+}
+#plus {
+  font-family: "roboto";
 }
 
 .chopp_name {
@@ -159,13 +194,13 @@ nav ul li a {
   position: fixed ;
   bottom: 16px;
   right: 32px;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 32px;
+  font-size: 15px;
   color: #1f1f1f;
   text-decoration: none;
   opacity: 0;

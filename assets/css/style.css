@@ -65,6 +65,7 @@ header h1 {
   margin-top: 1px;
   line-height: 1;
   font-size: 28px;
+  
 }
 header h1 span {
   color: #AD3825;
@@ -83,6 +84,7 @@ section h2 {
   padding:8px 16px;
   margin-bottom: 15px;
   font-size: 18px;
+  border-radius: 8px;
 
 }
 .chopp_name h3 {
@@ -121,12 +123,13 @@ ul li {
 
 
 nav {
-  margin-bottom: 5px;
+  margin-bottom: 2px;
   
 }
 nav ul {
   
   justify-content: space-around;
+  text-transform: uppercase;
   
 
 }
@@ -134,17 +137,17 @@ nav ul {
 nav ul li {
   display: inline;  
   background-color: #AD3825;
-  border-radius: 10px;
-  
-  padding: 7px 0;
+  border-radius: 5px;
+  padding: 3px 0;
   
   
 }
 nav ul li a {
   text-decoration: none;
   color: white;
-  padding-left:8.5px;
-  padding-right: 8.5px;
-  padding-top: 50px;
+  padding-left:3.5px;
+  padding-right:3.5px;
+  font-size: 14px;
+  font-family: 'roboto serif';
 
 }

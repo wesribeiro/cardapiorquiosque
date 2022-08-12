@@ -58,6 +58,8 @@ body {
   background-color: #ffedd5;
   font-family: 'roboto',sans-serif;
   min-width: 380px;
+  
+  align-items: center;
 }
   
   
@@ -71,6 +73,7 @@ header {
   margin-top: 0;
   max-width: 330px;
   border-radius: 0px 0px 10px 10px;
+  box-shadow: 0.5px 0.5px;
 }
 
 header h1 {
@@ -88,14 +91,16 @@ header p {
   line-height: 17px;
 }
 
-section, footer {
+section ul, section h2 {
   max-width: 300px;
   margin: 0 auto;
   margin-bottom: 30px;
 }
-footer h2 {
-  padding: 05px 10px;
-  margin-bottom: 10px;
+
+
+footer h2  {
+  
+  padding: 05px 0px;
   border-radius: 5px 5px 5px 5px;
   
 }
@@ -104,18 +109,18 @@ footer p {
   margin: 0px 10px;
 
 }
-footer {
-  margin-top: 50px;
-  border-radius: 0px 0px 10px 10px;
-  color: rgba(89, 23, 13, 0.9);
-  text-align: center;
-  align-items: flex-start;
-  background-color: rgba(254, 215, 170, 0.5);
-  padding:10px 21px;
-  border: 1px dotted ;
-  max-width: 350px;
+#footer {
   
+  border-radius: 10px 10px 0px 0px;
+  color: rgba(89, 23, 13, 1);  
+  background-color: rgba(254, 215, 170, 0.5);
+  text-align: center;
+  padding: 1px 0px;
+  margin: 25px auto ;
+  max-width: 330px;
 }
+
+
 footer a, #rights a {
   
   text-decoration: none;
@@ -127,10 +132,14 @@ section h2 {
   background-color: #fed7aa ;
   text-align: center;
   padding:8px 16px;
-  margin-bottom: 30px;
   font-size: 18px;
   border-radius: 8px;
   box-shadow: 0.5px 0.5px;
+}
+footer h2 {
+  box-shadow: none !important;
+  border-radius: 5px 5px 0px 0px;
+  margin-bottom: 4px !important; 
 }
 .price {
   background-color: rgba(254, 215, 170, 0.5);
@@ -268,6 +277,9 @@ nav ul li a {
 .bcs, .design {
   font-family: "roboto serif";
 
+}
+.design {
+  margin-bottom: 2px !important;
 }
 
 

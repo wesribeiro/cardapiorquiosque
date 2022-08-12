@@ -4,6 +4,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Serif:opsz,wght@8..144,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a54d2cbf95.js"></script>
+    
+
 
     
     <meta charset="UTF-8">
@@ -11,8 +14,11 @@
     <title>Cardapio Quiosque</title>
 
     <link rel="stylesheet" href="assets/css/style.css">
+    
   </head>
   <body>
+     
+    
     
     <header>
         <a href="https://www.instagram.com/quiosquebarrachopp/"><img src="img/logo.png" /></a>
@@ -23,7 +29,7 @@
         </div>
 
       <container>
-        <nav>
+        <nav id="nav">
             <ul>
               <li><a href="#chopps">Chopps</a></li>
               <li><a href="#fritas">Porções</a></li>
@@ -1001,14 +1007,29 @@ Drink a base de rum, suco de abacaxí e blue curaçáu.              </div>
 
       </ul>
 
-      
-            
-    </section>
-    <a href="#" class="to-top">
+          <a href="#" class="to-top">
       <i class="fas fa-chevron-up"></i>
     </a>
 
-    <script src="main.js"></script>
+      <script>
+
+        const toTop = document.querySelector(".to-top");
+
+          window.addEventListener("scroll", () => {
+            if (window.pageYOffset > 100) {
+            toTop.classList.add("active");
+          } else {
+            toTop.classList.remove("active");
+          }
+          })
+      </script>
+            
+    
+
+
+
+
+    
 
   </body>
 </html>

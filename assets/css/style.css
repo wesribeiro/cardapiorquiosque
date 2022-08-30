@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 html {
   scroll-behavior: smooth;
@@ -34,6 +35,7 @@ header p {
 
 .fill, .size, .filll {
   font-family: 'roboto';
+  overflow-x: hidden;
 }
 .size {
   text-transform: none;
@@ -71,7 +73,7 @@ header {
   text-align: center;  
   margin: 25px auto;
   margin-top: 0;
-  max-width: 330px;
+  max-width: 380px;
   border-radius: 0px 0px 10px 10px;
   box-shadow: 0.5px 0.5px;
 }
@@ -92,7 +94,7 @@ header p {
 }
 
 section ul, section h2 {
-  max-width: 300px;
+  max-width: 375px;
   margin: 0 auto;
   margin-bottom: 30px;
 }
@@ -109,15 +111,17 @@ footer p {
   margin: 0px 10px;
 
 }
-#footer {
+footer {
   
+}
+#footer {
   border-radius: 10px 10px 0px 0px;
   color: rgba(89, 23, 13, 1);  
   background-color: rgba(254, 215, 170, 0.5);
   text-align: center;
   padding: 1px 0px;
   margin: 25px auto ;
-  max-width: 330px;
+  max-width: 380px;
 }
 
 

@@ -33,10 +33,19 @@ header p {
   padding-bottom: 20px;
 }
 
-.fill, .size, .filll {
+.fill, .size{
   font-family: 'roboto';
   overflow-x: hidden;
 }
+.size, .price {
+  display: inline-block;
+  font-weight: bold;
+}
+.fill {
+  flex: 1;
+  color: rgba(0, 0, 0, 0.6);
+}
+
 .size {
   text-transform: none;
   
@@ -50,10 +59,7 @@ header p {
 .desc_p {
   margin-bottom: 0px;
 }
-.fill, .filll {
-  color: rgba(0, 0, 0, 0.6);
-  
-}
+
 
 /* FONTS */
 body {

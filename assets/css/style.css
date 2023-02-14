@@ -15,6 +15,7 @@ h1, h2, h3, h4, h5 {
   text-transform: uppercase;
   color: #2d2c2a;
 }
+
 header a img {
   width: 100px;
   height: 100px;
@@ -25,6 +26,8 @@ header p {
   font-size: 14px;
   line-height: 21px;
 }
+
+
 .spotlight {
   color: black;
 }
@@ -33,16 +36,18 @@ header p {
   padding-bottom: 20px;
 }
 
-.fill, .size{
+.fill, .filll, .size{
   font-family: 'roboto';
   overflow-x: hidden;
 }
 .size, .price {
   display: inline-block;
   font-weight: bold;
+  width: max-content;
 }
-.fill {
+.fill, .filll {
   flex: 1;
+  padding-left: 2px;
   color: rgba(0, 0, 0, 0.6);
 }
 
@@ -50,6 +55,11 @@ header p {
   text-transform: none;
   
 }
+.box-line {
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
 .desc, .desc_p {
   color: rgba(0, 0, 0, 0.7);
   font-size: 14px;
@@ -65,7 +75,7 @@ header p {
 body {
   background-color: #ffedd5;
   font-family: 'roboto',sans-serif;
-  min-width: 380px;
+  max-width: 100%;
   
   align-items: center;
 }
@@ -79,7 +89,7 @@ header {
   text-align: center;  
   margin: 25px auto;
   margin-top: 0;
-  max-width: 380px;
+  max-width: 95%;
   border-radius: 0px 0px 10px 10px;
   box-shadow: 0.5px 0.5px;
 }
@@ -98,11 +108,14 @@ header h1 span {
 header p {
   line-height: 17px;
 }
+.section {
+  max-width: 95%;
+}
 
 section ul, section h2 {
-  max-width: 375px;
+  max-width: 95%;
   margin: 0 auto;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 
@@ -127,7 +140,7 @@ footer {
   text-align: center;
   padding: 1px 0px;
   margin: 25px auto ;
-  max-width: 380px;
+  max-width: 95%;
 }
 
 
@@ -157,6 +170,8 @@ footer h2 {
   padding: 0px 3px;
   box-shadow:0.8px 0.8px;
   border-radius: 3px;
+  margin-right: 3px;
+  
 }
 #dashed {
   box-shadow:0.8px 0px;
@@ -164,8 +179,14 @@ footer h2 {
 }
 
 
-.chopp_name h3 {
+.chopp_name h3, .drink_name h3 {
 font-size: 16px;
+}
+.drinks ul li {
+  padding-top: 5px;
+  border: 1px solid #FED7AA;
+  border-radius: 3px;
+  padding-bottom: 3px;
 }
 #combo {
   line-height: 10px;
@@ -173,13 +194,17 @@ font-size: 16px;
 ul #combo h3 {
   margin-bottom: 10px;
 }
-#combo .price, .filll, #drinks .price, #porcoes .price {
+.filll {
+  line-height: 30px;
+
+}
+#combo .price, #drinks .price, #porcoes .price {
   line-height: 20px;
   margin-top: 3px;
   padding-top: 2px;
 }
 h5 {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 ul li {
@@ -189,19 +214,25 @@ ul li {
    margin-bottom: 10px;
    list-style: none;
    line-height: 20px;
+   max-width: 100%;
 }
 .porcoes {
   line-height: 20px;
 }
-
-.porcoes .description,  {
-  margin-bottom: 5px;
+.porcoes ul li {  
+  padding-top: 5px;
+  padding-bottom: 3px;
+  border-bottom: 1px outset #FED7AA;
+  border-left: 1px outset #FED7AA;
+  border-radius: 3px;
 }
+
+
 #plus {
   font-family: "roboto";
 }
 
-.chopp_name {
+.chopp_name, .drink_name {
   display: flex;
   flex-direction: column;   
 }
@@ -213,11 +244,14 @@ ul li {
 }
 .price {
   font-family: 'roboto';
-  word-wrap;
-  font-size: 14px;
+  font-size: 18px;
+  margin-right: 5px;
+  margin-bottom: 3px;
+  margin-left: 2px;
 }
 .size {
   padding-bottom: 0px;
+  font-size: 18px;
 }
 /* FONTS */
 
@@ -298,4 +332,104 @@ nav ul li a {
 
 #rights {
   margin-top: 30px;
+}
+
+/* ESTILIZAÇÃO DO MODAL*/
+html {
+  background-color: #FFEDD5;
+}
+.botao {
+  background-color: #ae5041;
+  color: #fefefe;
+  font-size: 10px;  
+  font-family: 'roboto serif';
+  font-weight: bold;
+  border: #000 solid 1px;
+  border-radius: 5px;
+  padding: 1px 5px;  
+  cursor: pointer;
+  margin-right: 5px;
+
+
+}
+
+#modal {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  padding-top: 20%;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+
+#modal-content {
+  background-color: #FED7AA;  
+  margin: 15% auto;
+  padding: 20px;
+  width: 95%;
+}
+#modal-image {
+  width:80%;
+  height: auto;
+}
+
+
+#modal-close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+#modal-close:hover,
+#modal-close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* FIM DA ESTILIZAÇÃO DO MODAL*/
+
+.name-button {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 5px;
+}
+.name-button h3 {
+  font-size: 16px ;
+}
+
+.description,.sub-description, .desc_p {
+  padding-right: 3px;
+  padding-left: 3px;
+}
+
+.desc, .size {  
+  padding-left: 3px;
+}
+
+.description, .sub-description, .botao {
+  min-width: max-content;
+}
+.name-button-drinks {
+  
+  padding-bottom: 10px;
+
+}
+.no-image {
+  background-color: #aaa;
+  color: #000;
+}
+.no-padding {
+  padding-bottom: 0;
+}
+.no-padding-left{
+  padding-left: 0;
 }

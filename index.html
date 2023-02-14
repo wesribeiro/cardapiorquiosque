@@ -14,9 +14,26 @@
     <title>Cardapio Quiosque</title>
 
     <link rel="stylesheet" href="assets/css/style.css">
+
+
+    
+  
+
+    
     
   </head>
   <body>
+
+    <!-- MODAL --> 
+
+    <div id="modal">
+      <div id="modal-content"> 
+        <span id="modal-close">&times;</span>
+          <img id="modal-image" alt="">
+      </div>
+    </div>
+
+    <!-- FIM DO MODAL --> 
      
     
     
@@ -28,8 +45,8 @@
           <p>Domingos e feriados das 11h-22h</p>
         </div>
 
-                  <div>
-        <nav id="nav">
+        <div>
+          <nav id="nav">
             <ul>
               <li><a href="#chopps">Chopps</a></li>
               <li><a href="#fritas">Porções</a></li>
@@ -37,7 +54,7 @@
               <li><a href="#drinks">Drinks</a></li>
             </ul>
           </nav>
-      </div>
+        </div>
 
 
 
@@ -217,8 +234,8 @@
             </div>
             <div class="size_price">
               <p class="size">Batata especial com Calabresa</p>
-              <div class="fill">................................................................................................................................</div>
-              <strong class="price" id="dashed">R$ 29,99</strong>
+              <div class="fill no-padding-left">................................................................................................................................</div>
+              <strong class="price no-padding-left" id="dashed">R$ 29,99</strong>
             </div>
             <div class="size_price">
               <p class="size">Batata especial com Bacon</p>
@@ -266,9 +283,14 @@
 
       <ul>
          <li class="porcoes">
+          
               <div class="chopp_name">
-                <h3 class="description">Calabresa Acebolada</h3>
-                  <div> 
+                  
+                <div class="name-button">
+                  <h3 class="description">Calabresa Acebolada</h3>                  
+                  <button class="botao no-image" id="open-food1">Visualizar &#128247;</button>
+                </div>
+                <div> 
                   </div>
                   <div class="desc_p">
                       400 grs de calabresa acebolada.
@@ -276,24 +298,26 @@
               </div>
 
               <div class="size_price">
-                <div class="fill">......................................................................................................................</div>
+                <div class="filll">......................................................................................................................</div>
                 <strong class="price">R$ 29,99</strong>
               </div>
         </li>       
 
        
         <li class="porcoes">
-              <div class="chopp_name">
-                <h3 class="description">Frango Xadrez</h3>
+          <div class="name-button">
+            <h3 class="description">Frango Xadrez</h3>            
+            <button class="botao no-image" id="open-food2">Visualizar &#128247;</button>
+          </div>
                   <div> 
-                  </div>
-                  <div class="desc_p">
-                      450 grs de filé de frango em cubos, na chapa, acompanhado de tomate, cebola, pimentão, xarém de cajú e molho verde. <br><i class="spotlight">+ 300 grs de Fritas acompanhadas de molho catchup.</i>
+                    </div>
+                    <div class="desc_p">
+                        450 grs de filé de frango em cubos, na chapa, acompanhado de tomate, cebola, pimentão, xarém de cajú e molho verde. <br><i class="spotlight">+ 300 grs de Fritas acompanhadas de molho catchup.</i>
                   </div>
               </div>
 
               <div class="size_price">
-                <div class="fill">......................................................................................................................</div>
+                <div class="filll">......................................................................................................................</div>
                 <strong class="price">R$ 44,99</strong>
               </div>
         </li>
@@ -301,7 +325,10 @@
 
         <li class="porcoes">
               <div class="chopp_name">
-                <h3 class="description">Iscas de Frango</h3>
+                <div class="name-button">
+                  <h3 class="description">Iscas de Frango</h3>                  
+                  <button class="botao no-image" id="open-food3">Visualizar &#128247;</button>
+                </div>
                   <div> 
                   </div>
                   <div class="desc_p">
@@ -310,7 +337,7 @@
               </div>
 
               <div class="size_price">
-                <div class="fill">......................................................................................................................</div>
+                <div class="filll">......................................................................................................................</div>
                 <strong class="price">R$ 44,99</strong>
               </div>
         </li>
@@ -318,7 +345,10 @@
 
         <li class="porcoes">
               <div class="chopp_name">
-                <h3 class="description">Bolinhos de Carne</h3>
+                <div class="name-button">
+                  <h3 class="description">Bolinhos de Carne</h3>                  
+                  <button class="botao no-image" id="open-food4">Visualizar &#128247;</button>
+                </div>
                   <div> 
                   </div>
                   <div class="desc_p">
@@ -327,7 +357,7 @@
               </div>
 
               <div class="size_price">
-                <div class="fill">......................................................................................................................</div>
+                <div class="filll">......................................................................................................................</div>
                 <strong class="price">R$ 46,99</strong>
               </div>
           </li>          
@@ -335,7 +365,10 @@
           
           <li class="porcoes">
               <div class="chopp_name">
-                <h3 class="description">Pernil au Pickles</h3>
+                <div class="name-button">
+                  <h3 class="description">Pernil ao Pickles</h3>                  
+                  <button class="botao no-image" id="open-food5">Visualizar &#128247;</button>
+                </div>
                   <div> 
                   </div>
                   <div class="desc_p">
@@ -344,7 +377,7 @@
               </div>
 
               <div class="size_price">
-                                <div class="fill">......................................................................................................................</div>
+                  <div class="filll">......................................................................................................................</div>
 
                 <strong class="price">R$ 49,99</strong>
               </div>
@@ -354,7 +387,10 @@
           
           <li class="porcoes">
               <div class="chopp_name">
-                <h3 class="description">Ventrecha de Caranha</h3>
+                <div class="name-button">
+                  <h3 class="description">Ventrecha de Caranha</h3>                  
+                  <button class="botao no-image" id="open-food6">Visualizar &#128247;</button>
+                </div>
                   <div> 
                   </div>
                   <div class="desc_p">
@@ -363,7 +399,7 @@
               </div>
 
               <div class="size_price">
-                <div class="fill">......................................................................................................................</div>
+                <div class="filll">......................................................................................................................</div>
                 <strong class="price">R$ 52,99</strong>
               </div>
           </li>
@@ -373,7 +409,10 @@
           
           <li class="porcoes">
               <div class="chopp_name">
-                <h3 class="description">pica-pau</h3>
+                <div class="name-button">
+                  <h3 class="description">Pica-Pau</h3>                  
+                  <button class="botao no-image" id="open-food7">Visualizar &#128247;</button>
+                </div>
                   <div> 
                   </div>
                   <div class="desc_p">
@@ -382,7 +421,7 @@
               </div>
 
               <div class="size_price">
-                <div class="fill">......................................................................................................................</div>
+                <div class="filll">......................................................................................................................</div>
                 <strong class="price">R$ 62,99</strong>
               </div>
           </li>
@@ -392,7 +431,10 @@
           
           <li class="porcoes">
               <div class="chopp_name">
-                <h3 class="description">cupim na mostarda e mel</h3>
+                <div class="name-button">
+                  <h3 class="description">Cupim na mostarda</h3>                  
+                  <button class="botao no-image" id="open-food8">Visualizar &#128247;</button>
+                </div>
                   <div> 
                   </div>
                   <div class="desc_p">
@@ -401,7 +443,7 @@
               </div>
 
               <div class="size_price">
-                <div class="fill">......................................................................................................................</div>
+                <div class="filll">......................................................................................................................</div>
                 <strong class="price">R$ 62,99</strong>
               </div>
           </li>
@@ -411,7 +453,10 @@
 
           <li class="porcoes">
               <div class="chopp_name">
-                <h3 class="description">filé mignon na chapa</h3>
+                <div class="name-button">
+                  <h3 class="description">Filé Mignom na Chapa</h3>                  
+                  <button class="botao no-image" id="open-food9">Visualizar &#128247;</button>
+                </div>
                   <div> 
                   </div>
                   <div class="desc_p">
@@ -420,7 +465,7 @@
               </div>
 
               <div class="size_price">
-                <div class="fill">......................................................................................................................</div>
+                <div class="filll">......................................................................................................................</div>
                 <strong class="price">R$ 72,99</strong>
               </div>
           </li>
@@ -430,7 +475,10 @@
 
           <li class="porcoes">
               <div class="chopp_name">
-                <h3 class="description">picanha na chapa</h3>
+                <div class="name-button">
+                  <h3 class="description">Picanha na Chapa</h3>                  
+                  <button class="botao no-image" id="open-food10">Visualizar &#128247;</button>
+                </div>
                   <div> 
                   </div>
                   <div class="desc_p">
@@ -439,7 +487,7 @@
               </div>
 
               <div class="size_price">
-                <div class="fill">......................................................................................................................</div>
+                <div class="filll">......................................................................................................................</div>
                 <strong class="price">R$ 72,99</strong>
               </div>
           </li>
@@ -448,16 +496,18 @@
 
                  <li class="porcoes">
               <div class="chopp_name">
-                <h3 class="description">picanha na chapa especial</h3>
-                  <div> 
-                  </div>
+                <div class="name-button no-padding">
+                  <h3 class="description ">Picanha na Chapa</h3>                  
+                  <button class="botao no-image" id="open-food11">Visualizar &#128247;</button>
+                </div>
+                <h3 class="description">Especial</h3>  
                   <div class="desc_p">
                     400 grs de picanha em cubos, acompanhada de pickles, tomate, cebola, pimentão e mussarela. <br><i class="spotlight">+ 300 grs de Fritas acompanhadas de molho catchup.</i>                    
                   </div>
               </div>
 
               <div class="size_price">
-                <div class="fill">......................................................................................................................</div>
+                <div class="filll">......................................................................................................................</div>
                 <strong class="price">R$ 82,99</strong>
               </div>
           </li>
@@ -478,14 +528,14 @@
          <li id="combo">
             <div class="chopp_name">
               <h3 class="description">tri-fasico</h3>
-              <h5 class="description">FRANGO / CALABRESA / FRITAS</h5>
+              <h5 class="sub-description">FRANGO / CALABRESA / FRITAS</h5>
                     <div class="desc_p">
                     450 grs de pedaços de peito de frango empanado acompanhado de molho verde <br> <strong id="plus">+</strong> 400 grs de Calabresa Acebolada <strong id="plus">+</strong> 300 grs de Fritas acompanhadas de molho catchup.
                     </div>
             </div>
 
             <div class="size_price">
-            <div class="fill">......................................................................................................................</div>
+            <div class="filll">......................................................................................................................</div>
 
             <strong class="price">R$ 54,99</strong>
             </div>
@@ -503,7 +553,7 @@
               </div>
             </div>
             <div class="size_price">
-            <div class="fill">......................................................................................................................</div>
+            <div class="filll">......................................................................................................................</div>
             <strong class="price">R$ 57,99</strong>
             </div>
         </li>
@@ -518,7 +568,7 @@
             </div>
 
             <div class="size_price">
-              <div class="fill">......................................................................................................................</div>
+              <div class="filll">......................................................................................................................</div>
               <strong class="price">R$ 59,99</strong>
             </div>
         </li>
@@ -535,7 +585,7 @@
             </div>
 
             <div class="size_price">
-              <div class="fill">......................................................................................................................</div>
+              <div class="filll">......................................................................................................................</div>
               <strong class="price">R$ 69,99</strong>
             </div>
         </li>
@@ -550,7 +600,7 @@
             </div>
 
             <div class="size_price">
-              <div class="fill">......................................................................................................................</div>
+              <div class="filll">......................................................................................................................</div>
               <strong class="price">R$ 99,99</strong>
             </div>
         </li>
@@ -565,15 +615,18 @@
 
       <ul>
          <li>
-            <div class="chopp_name">
-              <h3 class="description">caipirango</h3>
+            <div class="drink_name">
+              <div class="name-button">
+                <h3 class="description">Caipirango</h3>                
+                <button class="botao" id="open-drink1">Visualizar &#128247;</button>
+              </div>
                     <div class="desc_p">
                       Drink a base de vodka e morango.
                     </div>
             </div>
 
             <div class="size_price">
-            <div class="fill">......................................................................................................................</div>
+            <div class="filll">......................................................................................................................</div>
 
             <strong class="price">R$ 20,00</strong>
             </div>
@@ -583,28 +636,34 @@
 
       
         <li>
-            <div class="chopp_name">
-              <h3 class="description">caipririnha</h3>
+            <div class="drink_name">
+              <div class="name-button">
+                <h3 class="description">Caipirinha</h3>                
+                <button class="botao" id="open-drink2">Visualizar &#128247;</button>
+              </div>
               <div class="desc_p">
 Drink a base de cachaça de limão.
               </div>
             </div>
             <div class="size_price">
-            <div class="fill">......................................................................................................................</div>
+            <div class="filll">......................................................................................................................</div>
             <strong class="price">R$ 18,00</strong>
             </div>
         </li>
           
         <li>
-            <div class="chopp_name">
-              <h3 class="description">Caipirinha de Vinho</h3>
+            <div class="drink_name">
+              <div class="name-button">
+                <h3 class="description">Caipirinha de Vinho</h3>                
+                <button class="botao no-image" id="open-drink3">Visualizar &#128247;</button>
+              </div>
               <div class="desc_p">
                 Drink a base de cachaça e chopp de Vinho.
               </div>
             </div>
 
             <div class="size_price">
-              <div class="fill">......................................................................................................................</div>
+              <div class="filll">......................................................................................................................</div>
               <strong class="price">R$ 20,00</strong>
             </div>
         </li>
@@ -612,274 +671,333 @@ Drink a base de cachaça de limão.
 
 
         <li>
-            <div class="chopp_name">
-              <h3 class="description">caipirosca</h3>
+            <div class="drink_name">
+              <div class="name-button">
+                <h3 class="description">Caipirosca</h3>                
+                <button class="botao" id="open-drink4">Visualizar &#128247;</button>
+              </div>
               <div class="desc_p">
 Drinnk a base de Vodka e limão.
               </div>
             </div>
 
             <div class="size_price">
-              <div class="fill">......................................................................................................................</div>
+              <div class="filll">......................................................................................................................</div>
               <strong class="price">R$ 20,00</strong>
             </div>
         </li>
             
         <li>
-            <div class="chopp_name">
-              <h3 class="description">Caipixí</h3>
+            <div class="drink_name">
+              <div class="name-button">
+                <h3 class="description">Caipixi</h3>                
+                <button class="botao no-image" id="open-drink5">Visualizar &#128247;</button>
+              </div>
               <div class="desc_p">
-Drink a base de Vodka e abacaxí.
+Drink a base de Vodka e abacaxi.
               </div>
             </div>
 
             <div class="size_price">
-              <div class="fill">......................................................................................................................</div>
+              <div class="filll">......................................................................................................................</div>
               <strong class="price">R$ 20,00</strong>
             </div>
         </li>
 
                 <li>
-            <div class="chopp_name">
-              <h3 class="description">Cozumel de Chopp</h3>
+            <div class="drink_name">
+              <div class="name-button">
+                <h3 class="description">Cozumel de Chopp</h3>
+                <button class="botao" id="open-drink6">Visualizar &#128247;</button></div>
+              <div> 
               <div class="desc_p">
                 Drink a base de Chopp, limão e sal.
               </div>
             </div>
 
             <div class="size_price">
-              <div class="fill">......................................................................................................................</div>
+              <div class="filll">......................................................................................................................</div>
               <strong class="price">R$ 18,00</strong>
             </div>
         </li>
 
 
                 <li>
-            <div class="chopp_name">
-              <h3 class="description">Cuba Libre</h3>
+            <div class="drink_name">
+              <div class="name-button">
+                <h3 class="description">Cuba Libre</h3>                
+                <button class="botao no-image" id="open-drink7">Visualizar &#128247;</button>
+              </div>
               <div class="desc_p">
                 Drink a base de rum e coca-cola.
               </div>
             </div>
 
             <div class="size_price">
-              <div class="fill">......................................................................................................................</div>
+              <div class="filll">......................................................................................................................</div>
               <strong class="price">R$ 15,00</strong>
             </div>
         </li>
 
                 <li>
-            <div class="chopp_name">
-              <h3 class="description">Daquiri</h3>
+            <div class="drink_name">
+              <div class="name-button">
+                <h3 class="description">Daiquiri</h3>                
+                <button class="botao no-image" id="open-drink8">Visualizar &#128247;</button>
+              </div>
               <div class="desc_p">
                 Drink a base de rum, limão e laranja.
               </div>
             </div>
 
             <div class="size_price">
-              <div class="fill">......................................................................................................................</div>
+              <div class="filll">......................................................................................................................</div>
               <strong class="price">R$ 20,00</strong>
             </div>
         </li>
 
                 <li>
-            <div class="chopp_name">
-              <h3 class="description">Batida de Chopp de Vinho</h3>
+            <div class="drink_name">
+              <div class="name-button">
+                <h3 class="description">Batida de chopp de Vinho</h3>                
+                <button class="botao" id="open-drink9">Visualizar &#128247;</button>
+              </div>
               <div class="desc_p">
-Abacaxí, creme de leite, leite condensado e Chopp de Vinho.              </div>
+Abacaxi, creme de leite, leite condensado e Chopp de Vinho.              </div>
             </div>
 
             <div class="size_price">
-              <div class="fill">......................................................................................................................</div>
+              <div class="filll">......................................................................................................................</div>
               <strong class="price">R$ 20,00</strong>
             </div>
         </li>
 
                 <li>
-            <div class="chopp_name">
-              <h3 class="description">Gin Tônico Abacaxí</h3>
+            <div class="drink_name">
+              <div class="name-button">
+                <h3 class="description">Gin Tõnico Abacaxi</h3>                
+                <button class="botao no-image" id="open-drink10">Visualizar &#128247;</button>
+              </div>
               <div class="desc_p">
-                Drink a base de Gin, água tônica e abacaxí.
+                Drink a base de Gin, água tônica e abacaxi.
               </div>
             </div>
 
             <div class="size_price">
-              <div class="fill">......................................................................................................................</div>
+              <div class="filll">......................................................................................................................</div>
               <strong class="price">R$ 20,00</strong>
             </div>
         </li>
 
                 <li>
-            <div class="chopp_name">
-              <h3 class="description">Gin Tônico Kiwi</h3>
+            <div class="drink_name">
+              <div class="name-button">
+                <h3 class="description">Gin Tõnico Kiwi</h3>                
+                <button class="botao" id="open-drink11">Visualizar &#128247;</button>
+              </div>
               <div class="desc_p">
 Drink a base de Gin, água tônica e kiwi.              </div>
             </div>
 
             <div class="size_price">
-              <div class="fill">......................................................................................................................</div>
+              <div class="filll">......................................................................................................................</div>
               <strong class="price">R$ 20,00</strong>
             </div>
         </li>
 
 
                 <li>
-            <div class="chopp_name">
-              <h3 class="description">Gin Tônico limão siciliano</h3>
+            <div class="drink_name">
+              <div class="name-button no-padding">
+                <h3 class="description ">Gin Tônico </h3>                
+                <button class="botao" id="open-drink12">Visualizar &#128247;</button>
+              </div>
+              
+              <h3 class="description">Limão Siciliano</h3>   
               <div class="desc_p">
                 Drink a base de Gin, água tônica e limão siciliano.
               </div>
             </div>
 
             <div class="size_price">
-              <div class="fill">......................................................................................................................</div>
+              <div class="filll">......................................................................................................................</div>
               <strong class="price">R$ 20,00</strong>
             </div>
         </li>
 
 
                 <li>
-            <div class="chopp_name">
-              <h3 class="description">Gin Tônico Maracujá</h3>
+            <div class="drink_name">
+              <div class="name-button">
+                <h3 class="description">Gin Tõnico Maracujá</h3>                
+                <button class="botao no-image" id="open-drink13">Visualizar &#128247;</button>
+              </div>
               <div class="desc_p">
                 Drink a base de Vodka e Maracujá.
               </div>
             </div>
 
             <div class="size_price">
-              <div class="fill">......................................................................................................................</div>
+              <div class="filll">......................................................................................................................</div>
               <strong class="price">R$ 20,00</strong>
             </div>
         </li>
 
                 <li>
-            <div class="chopp_name">
-              <h3 class="description">Gin Tônico Morango</h3>
+            <div class="drink_name">
+              <div class="name-button">
+                <h3 class="description">Gin Tõnico Morango</h3>                
+                <button class="botao" id="open-drink14">Visualizar &#128247;</button>
+              </div>
               <div class="desc_p">
 Drink a base de Vodka e morango.
               </div>
             </div>
 
             <div class="size_price">
-              <div class="fill">......................................................................................................................</div>
+              <div class="filll">......................................................................................................................</div>
               <strong class="price">R$ 20,00</strong>
             </div>
         </li>
 
 
                 <li>
-            <div class="chopp_name">
-              <h3 class="description">Havaiana Azul</h3>
+            <div class="drink_name">
+              <div class="name-button">
+                <h3 class="description">Havaiana Azul</h3>                
+                <button class="botao" id="open-drink15">Visualizar &#128247;</button>
+              </div>
               <div class="desc_p">
 Drink a base de rum, suco de abacaxí e blue curaçáu.              </div>
             </div>
 
             <div class="size_price">
-              <div class="fill">......................................................................................................................</div>
+              <div class="filll">......................................................................................................................</div>
               <strong class="price">R$ 20,00</strong>
             </div>
         </li>
 
 
                 <li>
-            <div class="chopp_name">
-              <h3 class="description">Hi-Fly</h3>
+            <div class="drink_name">
+              <div class="name-button">
+                <h3 class="description">Hi-Fly</h3>                
+                <button class="botao" id="open-drink16">Visualizar &#128247;</button>
+              </div>
               <div class="desc_p">
                 Drink a base de Vodka e suco de laranja.
               </div>
             </div>
 
             <div class="size_price">
-              <div class="fill">......................................................................................................................</div>
+              <div class="filll">......................................................................................................................</div>
               <strong class="price">R$ 20,00</strong>
             </div>
         </li>
 
                 <li>
-            <div class="chopp_name">
-              <h3 class="description">Lagoa Azul</h3>
+            <div class="drink_name">
+              <div class="name-button">
+                <h3 class="description">Lagoa Azul</h3>                
+                <button class="botao no-image" id="open-drink17">Visualizar &#128247;</button>
+              </div>
               <div class="desc_p">
                 Drink a base de Vodka, limão e blue curaçáu.
               </div>
             </div>
 
             <div class="size_price">
-              <div class="fill">......................................................................................................................</div>
+              <div class="filll">......................................................................................................................</div>
               <strong class="price">R$ 20,00</strong>
             </div>
         </li>
 
 
                 <li>
-            <div class="chopp_name">
-              <h3 class="description">Margarita</h3>
+            <div class="drink_name">
+              <div class="name-button">
+                <h3 class="description">Margarita</h3>                
+                <button class="botao no-image" id="open-drink18">Visualizar &#128247;</button>
+              </div>
               <div class="desc_p">
                 Drink a base de tequila, blue curaçáu e sal.
               </div>
             </div>
 
             <div class="size_price">
-              <div class="fill">......................................................................................................................</div>
+              <div class="filll">......................................................................................................................</div>
               <strong class="price">R$ 20,00</strong>
             </div>
         </li>
 
 
                 <li>
-            <div class="chopp_name">
-              <h3 class="description">Piña Colada</h3>
+            <div class="drink_name">
+              <div class="name-button">
+                <h3 class="description">Piña Colada</h3>                
+                <button class="botao" id="open-drink19">Visualizar &#128247;</button>
+              </div>
               <div class="desc_p">
                 Drink a base de rum, leite de coco, leite condensado e abacaxí.
               </div>
             </div>
 
             <div class="size_price">
-              <div class="fill">......................................................................................................................</div>
+              <div class="filll">......................................................................................................................</div>
               <strong class="price">R$ 20,00</strong>
             </div>
         </li>
 
 
                 <li>
-            <div class="chopp_name">
-              <h3 class="description">Mojito</h3>
+            <div class="drink_name">
+              <div class="name-button">
+                <h3 class="description">Mojito</h3>                
+                <button class="botao" id="open-drink20">Visualizar &#128247;</button>
+              </div>
               <div class="desc_p">
                 Drink a base de rum, limão e hortelã.
               </div>
             </div>
 
             <div class="size_price">
-              <div class="fill">......................................................................................................................</div>
+              <div class="filll">......................................................................................................................</div>
               <strong class="price">R$ 20,00</strong>
             </div>
         </li> 
 
 
                 <li>
-            <div class="chopp_name">
-              <h3 class="description">Sangria</h3>
+            <div class="drink_name">
+              <div class="name-button">
+                <h3 class="description">Sangria</h3>                
+                <button class="botao" id="open-drink21">Visualizar &#128247;</button>
+              </div>
               <div class="desc_p">
                 Drink a base de Chopp de vinho e frutas variadas.
               </div>
             </div>
 
             <div class="size_price">
-              <div class="fill">......................................................................................................................</div>
+              <div class="filll">......................................................................................................................</div>
               <strong class="price">R$ 20,00</strong>
             </div>
         </li>
 
 
                 <li>
-            <div class="chopp_name">
-              <h3 class="description">Sex on the Beach</h3>
+            <div class="drink_name">
+              <div class="name-button">
+                <h3 class="description">Sex on The Beach</h3>                
+                <button class="botao" id="open-drink22">Visualizar &#128247;</button>
+              </div>
               <div class="desc_p">
                 Drink a base de Vodka, suco de laranja e groselha
               </div>
             </div>
 
             <div class="size_price">
-              <div class="fill">......................................................................................................................</div>
+              <div class="filll">......................................................................................................................</div>
               <strong class="price">R$ 20,00</strong>
             </div>
         </li>
@@ -915,7 +1033,7 @@ Drink a base de rum, suco de abacaxí e blue curaçáu.              </div>
             </div>
 
             <div class="size_price">
-            <div class="fill">......................................................................................................................</div>
+            <div class="filll">......................................................................................................................</div>
 
             <strong class="price">R$ 20,00</strong>
             </div>
@@ -932,7 +1050,7 @@ Drink a base de rum, suco de abacaxí e blue curaçáu.              </div>
               </div>
             </div>
             <div class="size_price">
-            <div class="fill">......................................................................................................................</div>
+            <div class="filll">......................................................................................................................</div>
             <strong class="price">R$ 20,00</strong>
             </div>
         </li>
@@ -946,7 +1064,7 @@ Drink a base de rum, suco de abacaxí e blue curaçáu.              </div>
             </div>
 
             <div class="size_price">
-              <div class="fill">......................................................................................................................</div>
+              <div class="filll">......................................................................................................................</div>
               <strong class="price">R$ 20,00</strong>
             </div>
         </li>
@@ -962,7 +1080,7 @@ Drink a base de rum, suco de abacaxí e blue curaçáu.              </div>
             </div>
 
             <div class="size_price">
-              <div class="fill">......................................................................................................................</div>
+              <div class="filll">......................................................................................................................</div>
               <strong class="price">R$ 20,00</strong>
             </div>
         </li>
@@ -976,7 +1094,7 @@ Drink a base de rum, suco de abacaxí e blue curaçáu.              </div>
             </div>
 
             <div class="size_price">
-              <div class="fill">......................................................................................................................</div>
+              <div class="filll">......................................................................................................................</div>
               <strong class="price">R$ 20,00</strong>
             </div>
         </li>
@@ -990,7 +1108,7 @@ Drink a base de rum, suco de abacaxí e blue curaçáu.              </div>
             </div>
 
             <div class="size_price">
-              <div class="fill">......................................................................................................................</div>
+              <div class="filll">......................................................................................................................</div>
               <strong class="price">R$ 20,00</strong>
             </div>
         </li>
@@ -1040,12 +1158,250 @@ Drink a base de rum, suco de abacaxí e blue curaçáu.              </div>
 
       </footer>
 
-      
 
+
+
+
+
+
+      <!-- SCRIPT MODAL -->
+      <script>
+        const modal = document.getElementById("modal");
+        const modalClose = document.getElementById("modal-close");
+        const modalImage = document.getElementById("modal-image");
+
+        // Add event listeners for each button
+        
+
+        const openModalButton2 = document.getElementById("open-modal-button2");
+        openModalButton2.addEventListener("click", function() {
+            modal.style.display = "block";
+            modalImage.src = '/img/drinks/COZUMEL.png';
+        });
+
+        // Add event listeners for the remaining buttons
+        // ...
+
+        modalClose.addEventListener("click", function() {
+            modal.style.display = "none";
+        });
+
+
+    </script>
 
      
             
-    
+    <!-- FIM DO SCRIPT MODAL -->
+
+
+
+
+
+
+    <!-- MODAL DRINKS -->
+    <script>
+        const openDrink1 = document.getElementById("open-drink1");
+            openDrink1.addEventListener("click", function() {
+            modal.style.display = "flex";
+            modalImage.src = 'img/drinks/caipirango.png';
+            modalClose.addEventListener("click", function() {
+            modal.style.display = "none";
+          });
+        });
+
+        const openDrink2 = document.getElementById("open-drink2");
+            openDrink2.addEventListener("click", function() {
+            modal.style.display = "flex";
+            modalImage.src = 'img/drinks/caipirinha.png';
+            modalClose.addEventListener("click", function() {
+            modal.style.display = "none";
+          });
+        });
+
+        const openDrink3 = document.getElementById("open-drink3");
+            openDrink3.addEventListener("click", function() {
+            modal.style.display = "flex";
+            modalImage.src = '/img/porcoes/BCHOPP.png';
+            modalClose.addEventListener("click", function() {
+            modal.style.display = "none";
+          });
+        });
+
+        const openDrink4 = document.getElementById("open-drink4");
+            openDrink4.addEventListener("click", function() {
+            modal.style.display = "flex";
+            modalImage.src = 'img/drinks/caipirosca.png';
+            modalClose.addEventListener("click", function() {
+            modal.style.display = "none";
+          });
+        });
+
+        const openDrink5 = document.getElementById("open-drink5");
+            openDrink5.addEventListener("click", function() {
+            modal.style.display = "flex";
+            modalImage.src = '/img/porcoes/BCHOPP.png';
+            modalClose.addEventListener("click", function() {
+            modal.style.display = "none";
+          });
+        });
+
+        const openDrink6 = document.getElementById("open-drink6");
+            openDrink6.addEventListener("click", function() {
+            modal.style.display = "flex";
+            modalImage.src = 'img/drinks/cozumel.png';
+            modalClose.addEventListener("click", function() {
+            modal.style.display = "none";
+          });
+        });
+
+        const openDrink7 = document.getElementById("open-drink7");
+            openDrink7.addEventListener("click", function() {
+            modal.style.display = "flex";
+            modalImage.src = '/img/porcoes/BCHOPP.png';
+            modalClose.addEventListener("click", function() {
+            modal.style.display = "none";
+          });
+        });
+
+        const openDrink8 = document.getElementById("open-drink8");
+            openDrink8.addEventListener("click", function() {
+            modal.style.display = "flex";
+            modalImage.src = '/img/porcoes/BCHOPP.png';
+            modalClose.addEventListener("click", function() {
+            modal.style.display = "none";
+          });
+        });
+
+        const openDrink9 = document.getElementById("open-drink9");
+            openDrink9.addEventListener("click", function() {
+            modal.style.display = "flex";
+            modalImage.src = 'img/drinks/batida-vinho.png';
+            modalClose.addEventListener("click", function() {
+            modal.style.display = "none";
+          });
+        });
+
+        const openDrink10 = document.getElementById("open-drink10");
+            openDrink10.addEventListener("click", function() {
+            modal.style.display = "flex";
+            modalImage.src = '/img/porcoes/BCHOPP.png';
+            modalClose.addEventListener("click", function() {
+            modal.style.display = "none";
+          });
+        });
+
+        const openDrink11 = document.getElementById("open-drink11");
+            openDrink11.addEventListener("click", function() {
+            modal.style.display = "flex";
+            modalImage.src = 'img/drinks/gt-kiwi.png';
+            modalClose.addEventListener("click", function() {
+            modal.style.display = "none";
+          });
+        });
+
+        const openDrink12 = document.getElementById("open-drink12");
+            openDrink12.addEventListener("click", function() {
+            modal.style.display = "flex";
+            modalImage.src = 'img/drinks/gt-limao.png';
+            modalClose.addEventListener("click", function() {
+            modal.style.display = "none";
+          });
+        });
+
+        const openDrink13 = document.getElementById("open-drink13");
+            openDrink13.addEventListener("click", function() {
+            modal.style.display = "flex";
+            modalImage.src = '/img/porcoes/BCHOPP.png';
+            modalClose.addEventListener("click", function() {
+            modal.style.display = "none";
+          });
+        });
+
+        const openDrink14 = document.getElementById("open-drink14");
+            openDrink14.addEventListener("click", function() {
+            modal.style.display = "flex";
+            modalImage.src = 'img/drinks/gt-morango.png';
+            modalClose.addEventListener("click", function() {
+            modal.style.display = "none";
+          });
+        });
+
+        const openDrink15 = document.getElementById("open-drink15");
+            openDrink15.addEventListener("click", function() {
+            modal.style.display = "flex";
+            modalImage.src = 'img/drinks/havaiana.png';
+            modalClose.addEventListener("click", function() {
+            modal.style.display = "none";
+          });
+        });
+
+        const openDrink16 = document.getElementById("open-drink16");
+            openDrink16.addEventListener("click", function() {
+            modal.style.display = "flex";
+            modalImage.src = 'img/drinks/hi-fly.png';
+            modalClose.addEventListener("click", function() {
+            modal.style.display = "none";
+          });
+        });
+
+        const openDrink17 = document.getElementById("open-drink17");
+            openDrink17.addEventListener("click", function() {
+            modal.style.display = "flex";
+            modalImage.src = '/img/porcoes/BCHOPP.png';
+            modalClose.addEventListener("click", function() {
+            modal.style.display = "none";
+          });
+        });
+
+        const openDrink18 = document.getElementById("open-drink18");
+            openDrink18.addEventListener("click", function() {
+            modal.style.display = "flex";
+            modalImage.src = '/img/porcoes/BCHOPP.png';
+            modalClose.addEventListener("click", function() {
+            modal.style.display = "none";
+          });
+        });
+
+        const openDrink19 = document.getElementById("open-drink19");
+            openDrink19.addEventListener("click", function() {
+            modal.style.display = "flex";
+            modalImage.src = 'img/drinks/pina-colada.png';
+            modalClose.addEventListener("click", function() {
+            modal.style.display = "none";
+          });
+        });
+
+        const openDrink20 = document.getElementById("open-drink20");
+            openDrink20.addEventListener("click", function() {
+            modal.style.display = "flex";
+            modalImage.src = 'img/drinks/mojito.png';
+            modalClose.addEventListener("click", function() {
+            modal.style.display = "none";
+          });
+        });
+
+        const openDrink21 = document.getElementById("open-drink21");
+            openDrink21.addEventListener("click", function() {
+            modal.style.display = "flex";
+            modalImage.src = 'img/drinks/sangria.png';
+            modalClose.addEventListener("click", function() {
+            modal.style.display = "none";
+          });
+        });
+
+        const openDrink22 = document.getElementById("open-drink22");
+            openDrink22.addEventListener("click", function() {
+            modal.style.display = "flex";
+            modalImage.src = 'img/drinks/sex-on-the-beach.png';
+            modalClose.addEventListener("click", function() {
+            modal.style.display = "none";
+          });
+        });
+
+    </script>
+
+
+    <!-- FIM DO MODAL DRINKS -->
 
 
 
